@@ -17,11 +17,17 @@
   background: var(--gradient-accent);
 }
 
+.footer::after {
+  content: none;
+}
+
 .footer-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-logo {
@@ -87,24 +93,51 @@
   height: 50px;
   color: rgba(255, 255, 255, 0.95) !important;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
 }
 
 .social-link svg {
   width: 24px;
   height: 24px;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
 }
 
 .social-link:hover {
-  transform: translateY(-3px) scale(1.1);
+  transform: translateY(-3px) scale(1.1) rotate(5deg);
   color: var(--accent-gold) !important;
   background: rgba(255, 255, 255, 0.2);
   border-color: var(--accent-gold);
   box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+}
+
+.social-link:hover::before {
+  width: 100px;
+  height: 100px;
+}
+
+.social-link:hover svg {
+  transform: scale(1.1);
 }
 
 .footer-bottom {

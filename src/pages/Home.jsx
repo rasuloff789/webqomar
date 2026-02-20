@@ -71,8 +71,8 @@ function Home() {
               {t.home.heroSubtitle}
             </p>
             <div className="hero-buttons">
-              <Link to="/register" className="btn btn-primary">
-                {t.home.enrollNow}
+              <Link to="/contact" className="btn btn-primary">
+                {t.home.contactUs}
               </Link>
               <Link to="/about-us" className="btn btn-outline">
                 {t.home.learnMore}
@@ -185,8 +185,8 @@ function Home() {
           <div className="cta-content">
             <h2>{t.home.readyToBegin}</h2>
             <p>{t.home.joinUsToday}</p>
-            <Link to="/register" className="btn btn-primary btn-large">
-              {t.home.registerNow}
+            <Link to="/contact" className="btn btn-primary btn-large">
+              {t.home.contactUs}
             </Link>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { useTranslation } from '../hooks/useTranslation'
+import logo from '../assets/logo.png'
 import './AboutUs.css'
 
 function AboutUs() {
@@ -16,6 +17,21 @@ function AboutUs() {
         </div>
       </section>
 
+      {/* Featured Video Section */}
+      <section className="section featured-video-section">
+        <div className="container">
+          <div className="featured-video-container">
+            <video
+              src="/IMG_0813.mp4"
+              controls
+              style={{ width: '100%', height: 'auto', borderRadius: '16px' }}
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
       {/* Mission Section */}
       <section className="section mission-section">
         <div className="container">
@@ -30,8 +46,8 @@ function AboutUs() {
               </p>
             </div>
             <div className="content-image">
-              <div className="image-placeholder">
-                <span className="placeholder-icon">📖</span>
+              <div className="image-container">
+                <img src={logo} alt="Qomar Quran Center" className="mission-image" />
               </div>
             </div>
           </div>

@@ -8,14 +8,7 @@
 }
 
 .about-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
-  opacity: 0.3;
+  content: none;
 }
 
 .page-title {
@@ -42,8 +35,34 @@
   font-weight: 400;
 }
 
+.featured-video-section {
+  background: var(--bg-light);
+  padding: 20px 0;
+}
+
+.featured-video-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-lg);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.featured-video-container video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--bg-lighter);
+}
+
 .mission-section {
   background: var(--white);
+  position: relative;
+}
+
+.mission-section::before {
+  content: none;
 }
 
 .content-grid {
@@ -51,6 +70,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .content-text h2 {
@@ -74,25 +95,40 @@
   align-items: center;
 }
 
-.image-placeholder {
+.image-container {
   width: 100%;
   max-width: 400px;
-  height: 300px;
-  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
-  border-radius: 12px;
+  height: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  background: var(--bg-lighter);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
 }
 
-.placeholder-icon {
-  font-size: 5rem;
-  opacity: 0.8;
+.image-container:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+.mission-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .programs-section {
   background: var(--bg-light);
+  position: relative;
+}
+
+.programs-section::before {
+  content: none;
 }
 
 .programs-grid {
@@ -100,6 +136,8 @@
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 40px;
   margin-top: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 .program-card {
@@ -108,13 +146,50 @@
   border-radius: 16px;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border-color);
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.program-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-accent);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.program-card::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--accent-gold);
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease;
 }
 
 .program-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
   border-color: var(--primary-light);
+}
+
+.program-card:hover::before {
+  transform: scaleX(1);
+}
+
+.program-card:hover::after {
+  opacity: 0.1;
+  transform: scale(1);
 }
 
 .program-card h3 {
@@ -159,6 +234,11 @@
 
 .values-detailed-section {
   background: var(--white);
+  position: relative;
+}
+
+.values-detailed-section::before {
+  content: none;
 }
 
 .values-detailed-grid {
@@ -166,6 +246,8 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
   margin-top: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 .value-detailed-card {
@@ -175,13 +257,51 @@
   border-radius: 16px;
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-md);
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.value-detailed-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: var(--gradient-accent);
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.value-detailed-card::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--accent-gold);
+  transform: rotate(45deg);
+  opacity: 0;
+  transform: rotate(45deg) scale(0);
+  transition: all 0.4s ease;
 }
 
 .value-detailed-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
   border-color: var(--primary-light);
+}
+
+.value-detailed-card:hover::before {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.value-detailed-card:hover::after {
+  opacity: 0.1;
+  transform: rotate(45deg) scale(1);
 }
 
 .value-icon {
@@ -234,13 +354,15 @@
   overflow: hidden;
 }
 
-.video-wrapper iframe {
+.video-wrapper iframe,
+.video-wrapper video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border: none;
+  object-fit: cover;
 }
 
 .videos-cta {
@@ -256,14 +378,19 @@
 }
 
 .location-section::before {
+  content: none;
+}
+
+.location-section::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
-  opacity: 0.3;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
 }
 
 .location-content {

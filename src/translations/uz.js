@@ -3,7 +3,7 @@ export const uz = {
   nav: {
     home: 'Bosh sahifa',
     aboutUs: 'Biz haqimizda',
-    register: 'Ro\'yxatdan o\'tish',
+    contact: 'Aloqa',
     donate: 'Xayriya'
   },
   
@@ -12,6 +12,7 @@ export const uz = {
     heroTitle: 'Xalqaro Qomar Qur\'on Markaziga Xush kelibsiz',
     heroSubtitle: 'Keng qamrovli onlayn va oflayn ta\'lim dasturlari orqali Muqaddas Qur\'onga chuqur tushunish va muhabbatni rivojlantirish.',
     enrollNow: 'Hoziroq ro\'yxatdan o\'ting',
+    contactUs: 'Biz bilan bog\'laning',
     learnMore: 'Ko\'proq biling',
     ourPrograms: 'Bizning dasturlarimiz',
     programsSubtitle: 'Jadvalingiz va o\'rganish uslubingizga mos keladigan moslashuvchan o\'rganish variantlari',
@@ -142,6 +143,21 @@ export const uz = {
     rightsReserved: 'Barcha huquqlar himoyalangan.'
   },
   
+  // Contact Page
+  contact: {
+    title: 'Biz bilan bog\'laning',
+    subtitle: 'Biz bilan aloqa',
+    howToContact: 'Biz bilan qanday bog\'lanish mumkin',
+    intro: 'Bizning dasturlarimiz, ro\'yxatdan o\'tish yoki umumiy savollar bo\'yicha sizga yordam berish uchun bu yerdamiz. Telegram kanallarimiz orqali biz bilan bog\'laning.',
+    telegramChannel: 'Telegram kanali',
+    telegramDescription: 'Yangilanishlar, e\'lonlar va jamoaviy muhokamalar uchun rasmiy Telegram kanalimizga qo\'shiling.',
+    contactTelegram: 'Telegram kanaliga qo\'shilish',
+    telegramAdmin: 'Telegram administratori',
+    telegramAdminDescription: 'Ro\'yxatdan o\'tish, kurs savollari va shaxsiy yordam uchun administratorimiz bilan to\'g\'ridan-to\'g\'ri bog\'laning.',
+    contactAdmin: 'Telegram orqali administrator bilan bog\'lanish',
+    note: 'Eng tez javob uchun iltimos, Telegram orqali biz bilan bog\'laning. Bizning jamoamiz har qanday savol yoki tashvishlarda sizga yordam berishga tayyor.'
+  },
+  
   // Donate Page
   donate: {
     title: 'Xayriya',
@@ -160,6 +176,163 @@ export const uz = {
     iban: 'IBAN',
     ibanNumber: 'TR5400 0100 0965 97562059 5001',
     transferNote: 'Xayriyalaringiz uchun pul o\'tkazish/EFT orqali quyidagi bank hisob ma\'lumotlaridan foydalanishingiz mumkin.'
+  },
+
+  // Premium Landing Page (Standalone)
+  premiumLanding: {
+    cta: {
+      telegramMessage: 'Assalomu alaykum. Premium Qur’on & Tajvid intensiv dasturiga yozilmoqchiman. Joylar bormi?',
+      note: 'Telegram ochiladi • Odatda 24 soat ichida javob',
+      meta: 'Darajangizga ishonchingiz komil emasmi? Yozing — mos boshlanishni tavsiya qilamiz.'
+    },
+    languages: {
+      en: 'English',
+      tr: 'Türkçe',
+      uz: "O'zbekcha",
+      ru: 'Русский',
+      ar: 'العربية'
+    },
+
+    hero: {
+      badge: 'Atigi 10 talaba',
+      limitedBadge: 'Joylar cheklangan',
+      urgencyLine: 'Kichik elit guruh • Individual tuzatish • O‘lchanadigan progress',
+      h1: '3 oyda Qur’onni o‘zlashtiring',
+      subtitle: 'Premium Qur’on & Tajvid intensiv dasturi',
+      promise:
+        'Taxmin qilishni va bir xil xatolarni qayta-qayta takrorlashni to‘xtating. Tuzilgan yo‘l xaritasi, haftalik nazorat va batafsil tuzatishlar orqali aniq va ishonchli tilovatni shakllantiring.',
+      outcomes: [
+        'To‘g‘ri talaffuz (mahraj) va kamroq takrorlanadigan tajvid xatolari',
+        'Haftalik testlar va individual tuzatish bilan aniq 3 oylik yo‘l xaritasi',
+        'Yakunida sertifikat va yodlashda o‘lchanadigan progress'
+      ],
+      ctaPrimary: '🔥 Hoziroq yoziling — joylar cheklangan',
+      ctaSecondary: 'Nimalarga erishasiz',
+      proof: {
+        lengthLabel: 'Dastur davomiyligi',
+        lengthValue: '3 oy',
+        classesLabel: 'Darslar',
+        classesValue: '3× guruh + 1× shaxsiy',
+        maxLabel: 'Maks guruh',
+        maxValue: '10 talaba'
+      }
+    },
+
+    problemSolution: {
+      title: 'Muammolardan tizimga',
+      lead:
+        'Ko‘pchilik talaba motivatsiya yetishmagani uchun emas, balki tizim bo‘lmagani uchun qiynaladi. Bu dastur noaniqlikni aniq, bosqichma-bosqich yo‘l xaritasiga aylantiradi.',
+      cards: {
+        strugglesTitle: 'Keng tarqalgan muammolar',
+        strugglesBullets: ['Noto‘g‘ri talaffuz', 'Takrorlanadigan tajvid xatolari', 'Tuzilgan tizim yo‘qligi'],
+        roadmapTitle: '3 oylik yo‘l xaritasi',
+        roadmapText:
+          'Haftalik maqsadlar, yo‘naltirilgan amaliyot va aniq bosqichlar bilan tuzilgan o‘quv dasturini kuzatasiz.',
+        correctionTitle: 'Individual tuzatish',
+        correctionText:
+          'Xatolar erta bosqichdayoq shaxsiy fikr-mulohaza bilan tuzatiladi — keyin qiyin odatlarga aylanmaydi.',
+        groupTitle: 'Kichik elit guruh',
+        groupText:
+          'Sifat va e’tiborni saqlash uchun guruh 10 talaba bilan cheklanadi.',
+        groupMiniBadge: 'Atigi 10 talaba'
+      }
+    },
+
+    achieve: {
+      title: 'Nimalarga erishasiz',
+      lead:
+        'Premium va natijasi o‘lchanadigan o‘quv dasturi — asoslardan ishonchli tilovatgacha.',
+      cards: [
+        { icon: '🔤', title: 'Arab harflari → Qur’on o‘qish', text: 'Birinchi kundan to‘g‘ri talaffuz bilan mustahkam poydevor.' },
+        { icon: '📖', title: 'Juz’ Amma yodlash', text: '30-juz uchun yo‘naltirilgan yodlash va barqaror takror.' },
+        { icon: '🌙', title: 'Suralar: Al-Mulk, Al-Voqi’a', text: 'Mahrajlar tuzatilib, barqaror ritm bilan yodlash va tilovat.' },
+        { icon: '🌿', title: 'Suralar: Ar-Rahman, Ya-Sin', text: 'Tuzilgan amaliyot va tuzatishlar bilan ravonlikni oshiring.' },
+        { icon: '🏁', title: 'Baqara surasini boshlash', text: 'Uzun tilovatga aniqlik va barqarorlik bilan kirish.' },
+        { icon: '✨', title: 'Tajvid (asosiy → yuqori)', text: 'Qoidalar bosqichma-bosqich, amaliy mashqlar va tuzatishlar bilan.' },
+        { icon: '🧠', title: '300 tajvid atamasi', text: 'Ko‘rsatmalarni tushunish va tezroq o‘zini tuzatish uchun.' },
+        { icon: '📝', title: 'Haftalik test va imtihonlar', text: 'Progressni isbotlaydigan va bo‘shliqlarni erta ko‘rsatadigan baholashlar.' }
+      ]
+    },
+
+    structure: {
+      title: 'Progressni himoya qiladigan premium tuzilma',
+      lead: 'Guruh motivatsiyasi + shaxsiy tuzatish — qisqa muddatda real natija uchun.',
+      groupKicker: 'Guruh mashg‘ulotlari',
+      groupMetric: 'Haftasiga 3 guruh darsi',
+      groupDetail: 'Fokus darslar + yo‘naltirilgan amaliyot + haftalik maqsadlar',
+      privateKicker: 'Shaxsiy tuzatish',
+      privateMetric: 'Haftasiga 1 shaxsiy sessiya',
+      privateDetail: 'Individual xatolarni to‘g‘ridan-to‘g‘ri fikr-mulohaza bilan tuzatish',
+      qualityKicker: 'Sifat kafolati',
+      qualityMetric: 'Maksimum 10 talaba',
+      qualityDetailStrong: 'Atigi 10 talaba',
+      qualityDetailRest: 'guruhda — siz ko‘rilasiz, tuzatilasiz va qo‘llab-quvvatlanasiz.',
+      qualityPill: 'Atigi 10 talaba'
+    },
+
+    salah: {
+      title: 'Namoz tilovatini mukammallashtiring',
+      lead:
+        'Siz yolg‘iz qolmaysiz. Qadam-baqadam amaliyot, dalda va tuzatishlar bilan namozda ishonch va xotirjamlik bilan o‘qing.',
+      checklist: ['Duolar', 'Zikr', 'Suralar', 'Individual tuzatish va fikr-mulohaza'],
+      sideTitle: 'Sizni tuzatishadi — muloyimlik bilan',
+      sideText:
+        'Maqsad — aniqlik va ishonch. Har bir tuzatish tilovatni sayqallash va asoslarni mustahkamlash imkonidir.',
+      sideCta: '🔥 Hoziroq yoziling — joylar cheklangan'
+    },
+
+    pricing: {
+      title: 'Qur’on uchun sarmoyangiz',
+      lead:
+        'Premium murabbiylik, tuzilgan dastur va haftalik nazorat — qat’iy guruh limiti bilan himoyalangan.',
+      amount: '$145',
+      subtext: 'To‘liq 3 oylik dastur – oldindan to‘lov',
+      urgency: 'Guruh 10 talaba bilan cheklangan',
+      includesTitle: 'Nimalar kiradi',
+      includesItems: [
+        'Haftasiga 3 guruh darsi (har biri 2 soat)',
+        'Haftasiga 1 shaxsiy tuzatish sessiyasi (1 soat)',
+        'Haftalik test va imtihonlar (nazorat + o‘lchanadigan natija)',
+        'Tajvid (asosiy → yuqori) + shaxsiy fikr-mulohaza',
+        'Muvaffaqiyatli yakunlaganga rasmiy sertifikat'
+      ],
+      policyTitle: 'Siyosat va aniqlik',
+      policyItems: [
+        'Tuzatish sifati uchun guruh 10 talaba bilan cheklanadi',
+        'Sertifikat dastur muvaffaqiyatli yakunlanganda beriladi',
+        'Jadval/boshlanish bo‘yicha savollar? Telegram’da yozib aniqlashtiring'
+      ],
+      ctaPrimary: '🔥 Hoziroq yoziling — joylar cheklangan',
+      ctaSecondary: 'Yuqoriga qaytish',
+      note: 'Joylar tuzatish sifati va individual e’tibor uchun ataylab cheklangan.'
+    },
+
+    certificate: {
+      badge: 'Sertifikatlangan dastur',
+      title: 'Dastur yakunida rasmiy sertifikat oling',
+      intro:
+        '3 oylik dasturni muvaffaqiyatli yakunlagan talabalar rasmiy “Tugatish sertifikati”ga ega bo‘ladilar.',
+      confirmsLabel: 'Sertifikat tasdiqlaydi:',
+      confirmsItems: [
+        'Premium Qur’on & Tajvid intensiv dasturini yakunlash',
+        'Tajvid bo‘yicha malaka darajasi',
+        'Yodlashdagi yutuqlar',
+        'Qomar Xalqaro Qur’on Markazi tomonidan imzolanib beriladi.'
+      ],
+      suitableLine: 'Shaxsiy yutuq va kelgusidagi islomiy ta’lim uchun ma’lumotnoma sifatida mos.',
+      signedLine: 'Nufuzli va ishonchli hujjat bilan mehnatingizni qadrlang.',
+      previewAriaLabel: 'Sertifikat ko‘rinishi',
+      previewAlt: 'Rasmiy sertifikat ko‘rinishi',
+      previewCaption: 'Rasmiy tugatish sertifikati'
+    },
+
+    finalCta: {
+      title: 'Joylar cheklangan. Bugun yoziling.',
+      subtitle:
+        'Premium 3 oylik intensivga qo‘shiling va aniq, yo‘naltirilgan tizim orqali to‘g‘ri tilovatni shakllantiring.',
+      button: '🔥 Hoziroq yoziling — joylar cheklangan',
+      badges: ['Atigi 10 talaba', '3 oylik yo‘l xaritasi', 'Haftalik tuzatish']
+    }
   }
 }
 

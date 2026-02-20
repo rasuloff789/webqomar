@@ -33,8 +33,8 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/register" className={location.pathname === '/register' ? 'active' : ''}>
-                  {t.nav.register}
+                <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
+                  {t.nav.contact}
                 </Link>
               </li>
               <li>

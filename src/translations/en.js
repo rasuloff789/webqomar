@@ -3,7 +3,7 @@ export const en = {
   nav: {
     home: 'Home',
     aboutUs: 'About Us',
-    register: 'Register',
+    contact: 'Contact',
     donate: 'Donate'
   },
   
@@ -12,6 +12,7 @@ export const en = {
     heroTitle: 'Welcome to International Qomar Quran Center',
     heroSubtitle: 'Fostering a deep understanding and love for the Holy Quran through comprehensive online and offline education programs.',
     enrollNow: 'Enroll Now',
+    contactUs: 'Contact Us',
     learnMore: 'Learn More',
     ourPrograms: 'Our Programs',
     programsSubtitle: 'Flexible learning options designed to fit your schedule and learning style',
@@ -142,6 +143,21 @@ export const en = {
     rightsReserved: 'All rights reserved.'
   },
   
+  // Contact Page
+  contact: {
+    title: 'Contact Us',
+    subtitle: 'Get in touch with us',
+    howToContact: 'How to Contact Us',
+    intro: 'We are here to help you with any questions about our programs, enrollment, or general inquiries. Reach out to us through our Telegram channels.',
+    telegramChannel: 'Telegram Channel',
+    telegramDescription: 'Join our official Telegram channel for updates, announcements, and community discussions.',
+    contactTelegram: 'Join Telegram Channel',
+    telegramAdmin: 'Telegram Admin',
+    telegramAdminDescription: 'Contact our admin directly for enrollment, course inquiries, and personalized assistance.',
+    contactAdmin: 'Contact Admin on Telegram',
+    note: 'For the fastest response, please contact us via Telegram. Our team is available to assist you with any questions or concerns.'
+  },
+  
   // Donate Page
   donate: {
     title: 'Donation',
@@ -160,6 +176,168 @@ export const en = {
     iban: 'IBAN',
     ibanNumber: 'TR5400 0100 0965 97562059 5001',
     transferNote: 'You can use the following bank account information for your donations via money transfer/EFT.'
+  },
+
+  // Premium Landing Page (Standalone)
+  premiumLanding: {
+    cta: {
+      telegramMessage: 'Assalamu alaikum. I want to enroll in the Premium Qur’an & Tajweed Intensive Program. Are seats available?',
+      note: 'Opens Telegram • Typical reply within 24 hours',
+      meta: 'Not sure about your level? Message us for a quick placement recommendation.'
+    },
+    // Language switcher labels (optional, used for aria/title if desired)
+    languages: {
+      en: 'English',
+      tr: 'Türkçe',
+      uz: "O'zbekcha",
+      ru: 'Русский',
+      ar: 'العربية'
+    },
+
+    hero: {
+      badge: 'Only 10 Students',
+      limitedBadge: 'Limited Seats',
+      urgencyLine: 'Small elite group • Personal correction • Measurable progress',
+      h1: 'Master the Qur’an in 3 Months',
+      subtitle: 'Premium Qur’an & Tajweed Intensive Program',
+      promise:
+        'Stop guessing, stop repeating mistakes, and finally build a clear, confident recitation with a structured roadmap, weekly accountability, and detailed correction—so you can recite with calm certainty.',
+      outcomes: [
+        'Recite with correct pronunciation (makharij) and fewer repeated Tajweed mistakes',
+        'Follow a clear 3‑month roadmap with weekly tests and personal correction',
+        'Finish with a certificate and measurable memorization progress'
+      ],
+      ctaPrimary: '🔥 Enroll Now – Limited Seats',
+      ctaSecondary: 'See What You’ll Achieve',
+      proof: {
+        lengthLabel: 'Program Length',
+        lengthValue: '3 Months',
+        classesLabel: 'Classes',
+        classesValue: '3× Group + 1× Private',
+        maxLabel: 'Max Group',
+        maxValue: '10 Students'
+      }
+    },
+
+    problemSolution: {
+      title: 'From struggle to structure',
+      lead:
+        'Most students don’t fail because they lack motivation—they struggle because the system is missing. This program replaces uncertainty with a clear, step-by-step roadmap.',
+      cards: {
+        strugglesTitle: 'Common struggles',
+        strugglesBullets: ['Incorrect pronunciation', 'Tajweed mistakes that repeat', 'No structured learning system'],
+        roadmapTitle: 'A 3-month roadmap',
+        roadmapText:
+          'You’ll follow a structured curriculum with weekly goals, guided practice, and clear milestones so you always know what to do next.',
+        correctionTitle: 'Personal correction',
+        correctionText:
+          'Mistakes are corrected early through individual feedback—so you don’t build habits that are hard to undo later.',
+        groupTitle: 'Small elite group',
+        groupText:
+          'Limited to 10 students per group to protect quality, attention, and real progress.',
+        groupMiniBadge: 'Only 10 Students'
+      }
+    },
+
+    achieve: {
+      title: 'What you will achieve',
+      lead:
+        'A premium, measurable outcome-focused curriculum—designed to take you from basics to confident recitation.',
+      cards: [
+        {
+          icon: '🔤',
+          title: 'Arabic letters → Qur’an reading',
+          text: 'Build a clean foundation from the letters, shaping correct pronunciation from day one.'
+        },
+        { icon: '📖', title: 'Memorize Juz’ Amma', text: 'A guided memorization plan for the 30th Juz with consistent revision.' },
+        { icon: '🌙', title: 'Surahs: Al-Mulk, Al-Waqi’ah', text: 'Memorize and recite with stable rhythm and corrected makharij.' },
+        { icon: '🌿', title: 'Surahs: Ar-Rahman, Ya-Sin', text: 'Strengthen fluency and confidence with structured practice and feedback.' },
+        { icon: '🏁', title: 'Begin Surah Al-Baqarah', text: 'Start your longer-form recitation with the tools to stay accurate and consistent.' },
+        { icon: '✨', title: 'Tajweed mastery (basic → advanced)', text: 'Progress through rules step-by-step with practical drills and correction.' },
+        { icon: '🧠', title: '300 Tajweed vocabulary words', text: 'Build the terminology needed to understand instructions and self-correct faster.' },
+        { icon: '📝', title: 'Weekly tests & exams', text: 'Stay accountable with weekly evaluations that prove progress and highlight gaps early.' }
+      ]
+    },
+
+    structure: {
+      title: 'Premium structure that protects your progress',
+      lead: 'A mix of group momentum and private correction—built for real results in a short time frame.',
+      groupKicker: 'Group Training',
+      groupMetric: '3 Group Classes / Week',
+      groupDetail: 'Focused instruction + guided practice + weekly targets',
+      privateKicker: 'Private Correction',
+      privateMetric: '1 Private Session / Week',
+      privateDetail: 'Individual mistakes corrected with direct feedback',
+      qualityKicker: 'Quality Guardrail',
+      qualityMetric: 'Maximum 10 Students',
+      qualityDetailStrong: 'Only 10 Students',
+      qualityDetailRest: 'per group so you’re seen, corrected, and supported.',
+      qualityPill: 'Only 10 Students'
+    },
+
+    salah: {
+      title: 'Perfect Your Salah Recitation',
+      lead:
+        'You won’t be left to struggle alone. You’ll be guided with reassurance, step-by-step practice, and correction—so you can recite in Salah with confidence and peace.',
+      checklist: ['Duas', 'Dhikr', 'Surahs', 'Individual correction & feedback'],
+      sideTitle: 'You will be corrected—with kindness',
+      sideText:
+        'The goal is clarity and confidence. Every correction is an opportunity to refine your recitation, strengthen your foundations, and feel calm in your worship.',
+      sideCta: '🔥 Enroll Now – Limited Seats'
+    },
+
+    pricing: {
+      title: 'Your Investment in the Qur’an',
+      lead:
+        'Premium coaching, structured curriculum, and weekly accountability—protected by a strict group size cap.',
+      amount: '$145',
+      subtext: 'Full 3-Month Program – Prepaid',
+      urgency: 'Limited to 10 Students Per Group',
+      includesTitle: "What’s included",
+      includesItems: [
+        '3 group classes per week (2 hours each)',
+        '1 private correction session per week (1 hour)',
+        'Weekly tests & exams (accountability + measurable progress)',
+        'Tajweed training from basics to advanced with personal feedback',
+        'Official Certificate of Completion upon successful finish'
+      ],
+      policyTitle: 'Policy & clarity',
+      policyItems: [
+        'Seats are capped at 10 students per group to protect correction quality',
+        'Certificate is issued upon successful completion of the program',
+        'Questions about schedule/start date? Message us on Telegram to confirm'
+      ],
+      ctaPrimary: '🔥 Enroll Now – Limited Seats',
+      ctaSecondary: 'Back to Top',
+      note: 'Seats are intentionally limited to protect correction quality and individual attention.'
+    },
+
+    certificate: {
+      badge: 'Certified Program',
+      title: 'Earn an Official Certificate Upon Completion',
+      intro:
+        'Students who successfully complete the 3-month program will receive an official Certificate of Completion.',
+      confirmsLabel: 'Certificate confirms:',
+      confirmsItems: [
+        'Completion of Premium Qur’an & Tajweed Intensive Program',
+        'Tajweed proficiency level',
+        'Memorization achievements',
+        'Signed and issued by Qomar International Qur’an Center.'
+      ],
+      suitableLine: 'Suitable for personal achievement and future Islamic studies reference.',
+      signedLine: 'A prestigious credential designed to be valuable, trustworthy, and exclusive.',
+      previewAriaLabel: 'Certificate preview',
+      previewAlt: 'Official certificate preview',
+      previewCaption: 'Official Certificate of Completion'
+    },
+
+    finalCta: {
+      title: 'Spots Are Limited. Enroll Today.',
+      subtitle:
+        'Join the premium 3-month intensive and begin building correct Qur’an recitation with a clear, guided system.',
+      button: '🔥 Enroll Now – Limited Seats',
+      badges: ['Only 10 Students', '3-Month Roadmap', 'Weekly Correction']
+    }
   }
 }
 
